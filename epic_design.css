@@ -1,32 +1,232 @@
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
+    font-family: "Fira Code", "Source Code Pro", monospace;
 }
 
-.flex-container {
+body {
+    font-family: "Fira Code", "Source Code Pro", monospace;
+    color: #ffffff;
+    background: #181818;
+    margin: 0;
+    padding: 0;
+    text-align: justify;
+}
+
+.page-container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+/*****************************************************************************/
+/* Anchor tag style */
+a {
+    text-decoration: none;
+    color: #8be9fd;
+}
+
+.contact-details a{
+    margin: 20px;
+    font-size: 20px;
+}
+
+.nav_bar a {
     display: flex;
-    border-style: solid;
-    border-width: 5px;
-    border-color: red;
-    flex-direction: row;
+    margin: 20px;
+    padding-top: 7px;
+    font-size: 17px;
+    justify-content: flex-end;
+}
+
+
+/*****************************************************************************/
+/* Header styling */
+.header1 {
+    display: flex;
+    padding-top: 40px;
+    font-size: 40px;
+    justify-content: flex-start;
+}
+
+#intro {
+    font-size: 18px;
+}
+
+.header2 {
+    padding-top: 50px;
+    font-size: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+/*****************************************************************************/
+/* Footer styling */
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    padding: 20px 0;
+    font-size: 15px;
+    padding-top: 100px; 
+    padding-bottom: 15px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.contact-details {
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
+    padding: 50px;
 }
 
 .nav_bar {
     display: flex;
-    border-style: solid;
-    border-width: 5px;
-    border-color: rgb(255, 0, 200);
-    flex-direction: row;
+    padding-top: 15px;
+    padding-right: 180px;
+    justify-content: flex-end;
 }
 
-.flex-container2 {
-    display: flex;
-    border-style: solid;
-    border-width: 5px;
-    border-color: rgb(0, 255, 51);
-    flex-direction: row;
+
+/*****************************************************************************/
+/* Image styling */
+.profile-pic {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
 }
-.flex-item {
-    border-style: solid;
-    border-width: 2px;
-    border-color: red;
+
+.profile-container {
+    margin: 50px auto;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.project-pic {
+    width: 480px;
+    height: 300px;
+    border-radius: 10px;
+}
+
+.project-container {
+    margin: 50px 0;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.25);
+    background: #1f1f1f;
+
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 20px;
+}
+
+.project-details, .profile-details {
+    max-width: 480px;
+}
+
+/* Divide design for each section */
+.line {
+    width: 90px;
+    height: 4px;
+    background-color: #8be9fd;
+    margin: 0 auto;
+    border-radius: 2px;
+    
+}
+
+/*****************************************************************************/
+/* Terminal window styling */
+.terminal {
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.25);
+    background: #1f1f1f;
+}
+
+.terminal-bar {
+    background: #e6e6e6;
+    padding: 10px;
+    display: flex;
+    gap: 8px;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+
+.red    { background: #ff5f56; }
+.yellow { background: #ffbd2e; }
+.green  { background: #27c93f; }
+
+/*****************************************************************************/
+/* Terminal text styling */
+.details {
+    padding: 20px;
+    color: #f8f8f2;
+    font-size: 16px;
+    line-height: 1.6;
+    white-space: pre;
+}
+
+.details a {
+    color: #8be9fd;
+    text-decoration: none;
+}
+
+.details a:hover {
+    text-decoration: underline;
+}
+
+/*****************************************************************************/
+/* Cursor blink */
+.cursor {
+    display: inline-block;
+    width: 10px;
+    height: 1.2em;
+    background: #f8f8f2;
+    margin-left: 5px;
+    animation: blink 1s steps(1) infinite;
+}
+
+@keyframes blink {
+    50% { opacity: 0; }
+}
+
+/*****************************************************************************/
+/* Tech stack and button styling */
+.project-actions {
+
+}
+
+.tech-stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.tech {
+    padding: 6px 14px;
+    border: 2px solid #8be9fd;
+    border-radius: 10px;
+    font-size: 14px;
+}
+
+/* For future implementation */
+.project-link {
+
+
+}
+
+.icon {
+  font-size: 14px;
 }
