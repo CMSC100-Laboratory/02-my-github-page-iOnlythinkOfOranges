@@ -15,6 +15,6 @@
 - GitHub got cool features like GitHub Pages.
 - You can nest tags.
 - Not all tags needs to be closed.
-- <, > and other characters need to be a character sequence to prevent HTML from intepreting it as part of its tag syntax.
+- <, > and other characters need to be written as a character sequence to prevent HTML from interpeting it as part of its tag syntax.
 - You can group CSS selectors to have the same styling.
 - Semantic and non-semantic tags.
