@@ -12,4 +12,9 @@
 5. Click visit site located at the top of the page.
 ---  
 **What are your key takeaways from this exercise?**  
-GitHub got cool features like GitHub Pages.
+- GitHub got cool features like GitHub Pages.
+- You can nest tags.
+- Not all tags needs to be closed.
+- <, > and other characters need to be a character sequence to prevent HTML from intepreting it as part of its tag syntax.
+- You can group CSS selectors to have the same styling.
+- Semantic and non-semantic tags.
