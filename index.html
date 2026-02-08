@@ -4,59 +4,152 @@
     <meta charset="UTF-8" />
     <title>My epic portfolio</title>
     <link rel="stylesheet" type="text/css" href="epic_design.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   </head>
 
   <nav>
     <div class="nav_bar">
-      <div class="flex-item">
-        <a href="#about">About me</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-      </div>
+      <a href="#about">About me</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
     </div>
   </nav>
 
-
   <body>
-
-    <header>
-      <h1 class="header1">&gt; Jan Vincent M. Gloria</h1>
-      <p>
-        You can call me Jiro.<br>
-        I am a sophomore Computer Science student at the University of the Philippines Los Baños.<br>
-        Check out my <a href="#projects">projects</a> below.
-      </p>
-    </header>
+    <div class="page-container">
+      <header>
+        <h1 class="header1">&gt; Jan Vincent M. Gloria<span class="cursor"></span></h1>
+        <div class="profile-container">
+          <img src="assets/myphoto.gif" class="profile-pic">
+          <div class="profile-details">
+            <p id="intro">
+              You can call me Jiro.<br>
+              I am a sophomore Computer Science student at the University of the Philippines Los Baños.<br>
+              My passion is understanding how things work.<br>
+              Check out my <a href="#projects">projects</a> below.
+            </p>
+          </div>
+        </div>
+      </header>
 
     <section id="about">
-      <pre class="details">
-        &gt; Jiro.education
-        "BS Computer Science - University of the Philippines Los Baños"
+      <div class="terminal">
+        <div class="terminal-bar">
+          <span class="dot red"></span>
+          <span class="dot yellow"></span>
+          <span class="dot green"></span>
+        </div>
 
-        &gt; Jiro.skills
-        ["Python", "Java", "C", "HTML", "CSS", "R", "Dart"]
+        <pre class="details">
+&gt; Jiro.education
+"<a href="https://ics.uplb.edu.ph/degree-programs/bs-computer-science/" target="_blank">BS Computer Science - University of the Philippines Los Baños</a>"
 
-        &gt; Jiro.location
-        "Batong Malake, Los Baños, Laguna"
+&gt; Jiro.skills
+["Python", "Java", "C", "HTML", "CSS", "R", "Dart"]
 
-        &gt; Jiro.contact
-        ["jmgloria@up.edu.ph", "GitHub", "LinkedIn"]
+&gt; Jiro.location
+"Batong Malake, Los Baños, Laguna"
 
-        &gt; Jiro.hobbies
-        ["Sim Racing", "Travelling", "Video Games"]
-      </pre>
+&gt; Jiro.contact
+["<a href="mailto:jmgloria@up.edu.ph" target="_blank">jmgloria@up.edu.ph</a>", "<a href="https://github.com/iOnlythinkOfOranges" target="_blank">GitHub</a>", "<a href="https://www.linkedin.com/in/jan-vincent-gloria/" target="_blank">LinkedIn</a>"]
+
+&gt; Jiro.hobbies
+["Sim Racing", "Travelling", "Video Games"]
+
+&gt; <span class="cursor"></span>
+        </pre>
+      </div>
     </section>
+      <section id="projects">
+        <h2 class="header2">Projects</h2>
+        <div class="line"></div>
 
-    <section id="projects">
-      <h2 class="header2">&gt; Projects</h2>
-      
-    </section>
+        <div class="project-container">
+          <img src="assets/project1.png" class="project-pic">
+          <div class="project-details">
+            <h3>Café Tadhana</h3>
+            <p>
+              A (pseudo cloud) cafe booking and ordering application. 
+              We were grouped into 3 and were required to build an app for our final project for our OOP course. 
+              I took the initiative to lead the group, created blueprints and data models, 
+              and helped with code implementation.
+            </p>
+            <div class="project-actions">
+              <div class="tech-stack">
+                <span class="tech">Java</span>
+                <span class="tech">JavaFX</span>
+              </div>
+            </div>
+            <a href="https://github.com/iOnlythinkOfOranges/Cafe-Tadhana" target="_blank" class="btn btn-outline">
+              <i class="fa-brands fa-github"></i>  View Source
+            </a>
+          </div>
+        </div>
 
-    <section id="contact">
-      <h2 class="header2">&gt; Contact me!</h2>
-      
-    </section>
+        <div class="project-container">
+          <img src="assets/project2.png" class="project-pic">
+          <div class="project-details">
+            <h3>City Pollution Reduction Optimization</h3>
+            <p>
+              This was an individual project for our Numerical and Symbolic Computation
+              course. A dataset was provided and we were tasked to create
+              an optimization decision webapp tool that determines the lowest-cost
+              combination of mitigation projects that meets the standard of reduced pollutants.
+              It evaluates feasibility and shows the optimal projects with breakdowns through an
+              interactive interface.  
+            </p>
+            <div class="project-actions">
+              <div class="tech-stack">
+                <span class="tech">Python</span>
+                <span class="tech">NumPy</span>
+                <span class="tech">Pandas</span>
+                <span class="tech">Streamlit</span>
+              </div>
+            </div>
+              <a href="https://github.com/iOnlythinkOfOranges/Cafe-Tadhana" target="_blank" class="btn btn-outline">
+                <i class="fa-brands fa-github"></i>  View Source
+            </a>
+          </div>
+        </div>
 
+        <div class="project-container">
+          <img src="assets/project3.png" class="project-pic">
+          <div class="project-details">
+            <h3>Pokemon Safari Zone Simulator</h3>
+            <p>
+              A command-line Pokémon game. An individual project for our Foundations of Computer Science course. 
+              The task was to create a game where you fight, capture, and collect Pokémons. 
+              I added a reset game file functionality, just in case you've caught them all!
+            </p>
+            <div class="project-actions">
+              <div class="tech-stack">
+                <span class="tech">Python</span>
+              </div>
+            </div>
+            <a href="https://github.com/iOnlythinkOfOranges/Cafe-Tadhana" target="_blank" class="project-link">
+              <i class="fa-brands fa-github"></i>  View Source
+            </a>
+          </div>
+
+        </div>
+      </section>
+
+      <section id="contact">
+        <h2 class="header2">Contact me!</h2>    
+        <div class="line"></div>
+        <span class="contact-details">
+          <a href="mailto:jmgloria@up.edu.ph" target="_blank">jmgloria@up.edu.ph</a> || 
+          <a href="https://www.linkedin.com/in/jan-vincent-gloria/" target="_blank">LinkedIn</a> || 
+          <a href="https://github.com/iOnlythinkOfOranges" target="_blank">
+            <i class="fa-brands fa-github"></i> 
+          </a>
+        </span>
+      </section>
+
+      <footer class="footer">
+        <p>Made by Jan Vincent Gloria © 2026</p>
+      </footer>
+    </div> 
   </body>
 
 </html>
